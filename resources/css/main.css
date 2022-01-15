@@ -132,7 +132,7 @@ header nav .submenu {
 }
 
 header nav .submenu,
-header nav .menu > li > a {
+header nav .menu > li > a:not(.image) {
   margin: 0 0.2rem;
   padding: 0.5rem;
   color: var(--bg-main-color);
@@ -140,8 +140,21 @@ header nav .menu > li > a {
   transition: background-color 200ms linear;
 }
 
+header nav .menu > li > .image {
+  height: 2rem;
+  width: 2rem;
+  padding: 0.1rem;
+  margin-left: 1rem;
+}
+
+header nav .menu > li > .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
 header nav .submenu:hover,
-header nav .menu > li > a:hover {
+header nav .menu > li > a:not(.image):hover {
   background-color: var(--font-sec-color);
 }
 
@@ -161,7 +174,7 @@ header nav .submenu ul {
   margin: 0.5rem 0 0 0;
   background-color: var(--bg-sec-color) !important;
   opacity: 0;
-  /* filter: drop-shadow(0.4rem 0.4rem 0.1rem #000); */
+  filter: drop-shadow(0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.3));
   transition: opacity 200ms ease-in;
   width: max-content;
 }
@@ -290,6 +303,23 @@ body > footer {
 
 body > footer > div {
   margin: 1rem;
+}
+
+.list-of-calibers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.caliber-list {
+  flex: 16rem;
+  padding: 1rem;
+}
+
+.caliber-list li {
+  font-size: 1.1rem;
+  margin: 0.3rem;
 }
 
 .graphs {
