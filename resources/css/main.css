@@ -183,6 +183,10 @@ header nav .submenu:hover > ul {
   opacity: 1;
 }
 
+.icon {
+  user-select: none;
+}
+
 .overview {
   display: flex;
   flex-wrap: wrap;
