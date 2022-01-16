@@ -82,7 +82,7 @@ main,
 footer {
   max-width: 80rem;
   margin: 0 auto;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
 }
 
 main {
@@ -95,6 +95,7 @@ header {
   margin-top: 1rem;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 header .title {
@@ -122,8 +123,9 @@ header nav .menu {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin: 1rem 0;
   padding: 0;
+  gap: 0.3rem;
+  flex-wrap: wrap;
 }
 
 header nav .submenu {
@@ -133,24 +135,10 @@ header nav .submenu {
 
 header nav .submenu,
 header nav .menu > li > a:not(.image) {
-  margin: 0 0.2rem;
   padding: 0.5rem;
   color: var(--bg-main-color);
   background-color: var(--font-main-color);
   transition: background-color 200ms linear;
-}
-
-header nav .menu > li > .image {
-  height: 2rem;
-  width: 2rem;
-  padding: 0.1rem;
-  margin-left: 1rem;
-}
-
-header nav .menu > li > .image img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
 }
 
 header nav .submenu:hover,
@@ -179,6 +167,12 @@ header nav .submenu ul {
   width: max-content;
 }
 
+@media only screen and (max-width: 442px) {
+  header nav .submenu ul {
+    left: 0;
+  }
+}
+
 header nav .submenu li a {
   display: block;
   padding: 0.3rem;
@@ -201,6 +195,7 @@ header nav .submenu:hover > ul {
 .overview .item {
   box-sizing: content-box;
   max-width: 30%;
+  min-width: 13rem;
   padding: 1rem;
   text-align: center;
   background-color: var(--bg-sec-color);
@@ -237,6 +232,7 @@ table {
 .table-big {
   width: 100%;
   margin: 0 auto;
+  min-width: 35rem;
 }
 
 .table-big caption {
@@ -305,6 +301,30 @@ body > footer > div {
   margin: 1rem;
 }
 
+body > footer .social {
+  margin: 0 auto;
+}
+
+body > footer .social ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+
+body > footer .social li {
+  height: 2rem;
+  width: 2rem;
+  padding: 0.1rem;
+  margin-left: 1rem;
+}
+
+body > footer .social img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
 .list-of-calibers {
   display: flex;
   flex-wrap: wrap;
@@ -324,10 +344,13 @@ body > footer > div {
 
 .graphs {
   display: flex;
+  flex-wrap: wrap;
+  overflow-x: auto;
 }
 
 .graphs .graph {
   flex: 50%;
+  min-width: 36rem;
 }
 
 .graph svg {
