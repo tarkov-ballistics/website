@@ -162,7 +162,7 @@ header nav .submenu ul {
   margin: 0.5rem 0 0 0;
   background-color: var(--bg-sec-color) !important;
   opacity: 0;
-  filter: drop-shadow(0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0.2rem 0.4rem 0.4rem rgba(0, 0, 0, 0.3));
   transition: opacity 200ms ease-in;
   width: max-content;
 }
@@ -225,8 +225,10 @@ header nav .submenu:hover > ul {
   max-width: 20rem;
 }
 
-.table-wrapper {
-  overflow-x: auto;
+@media only screen and (max-width: 665px) {
+  .table-wrapper {
+    overflow-x: auto;
+  }
 }
 
 table {
@@ -234,6 +236,7 @@ table {
 }
 
 .table-big {
+  position: relative;
   width: 100%;
   margin: 0 auto;
   min-width: 35rem;
@@ -247,6 +250,8 @@ table {
 }
 
 thead {
+  top: 0;
+  position: sticky;
   background-color: var(--font-main-color);
   color: var(--bg-main-color);
 }
@@ -289,6 +294,10 @@ td {
 .table-big th,
 .table-big td {
   text-align: center;
+}
+
+.data-table th {
+  text-align: left;
 }
 
 article > footer {
@@ -346,10 +355,36 @@ body > footer .social img {
   margin: 0.3rem;
 }
 
+.item-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.item-info .description {
+  flex: min-content;
+}
+
+.item-info .data-table {
+  padding: 1rem;
+  background-color: var(--bg-sec-color);
+}
+
+.item-info .data-table caption {
+  margin-bottom: 0.5rem;
+}
+
+.item-info .data-table th,
+.item-info .data-table td {
+  padding: 0.6rem;
+}
+
 .graphs {
   display: flex;
   flex-wrap: wrap;
   overflow-x: auto;
+  width: 100%;
 }
 
 .graphs .graph {
