@@ -300,6 +300,16 @@ td {
   text-align: left;
 }
 
+.data-table th .help {
+  display: inline-block;
+  background-image: url("../img/help.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0.9rem;
+  width: 1rem;
+  opacity: 0.8;
+}
+
 article > footer {
   font-style: italic;
   margin-top: 2rem;
