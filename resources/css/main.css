@@ -198,7 +198,7 @@ header nav .submenu:hover > ul {
 
 .overview .item {
   box-sizing: content-box;
-  max-width: 30%;
+  max-width: 22rem;
   min-width: 13rem;
   padding: 1rem;
   text-align: center;
@@ -406,11 +406,16 @@ body > footer .social img {
   width: 100%;
 }
 
+.poloto_background {
+  fill: none;
+}
+
 .poloto_text {
   fill: var(--font-main-color);
 }
 
 .poloto_labels {
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
@@ -421,4 +426,8 @@ body > footer .social img {
 .poloto_line {
   stroke: var(--font-main-color);
   stroke-width: 0.1rem;
+}
+
+.poloto_tick_line {
+  stroke: rgba(200, 200, 200, 0.2);
 }
