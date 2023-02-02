@@ -406,28 +406,34 @@ body > footer .social img {
   width: 100%;
 }
 
+.poloto {
+  font-family: inherit !important;
+  font-size: inherit !important;
+}
+
 .poloto_background {
-  fill: none;
+  fill: none !important;
 }
 
 .poloto_text {
-  fill: var(--font-main-color);
+  fill: var(--font-main-color) !important;
 }
 
-.poloto_labels {
-  font-size: 1.2rem;
-  font-weight: bold;
+.poloto_name {
+  font-size: 1.3rem !important;
+  font-weight: bold !important;
+}
+
+.poloto_line,
+.poloto_imgs.poloto_ticks {
+  stroke: var(--font-main-color) !important;
+  stroke-width: 0.1rem !important;
 }
 
 .poloto_axis_lines {
-  stroke: var(--font-sec-color);
+  stroke: var(--font-sec-color) !important;
 }
 
-.poloto_line {
-  stroke: var(--font-main-color);
-  stroke-width: 0.1rem;
-}
-
-.poloto_tick_line {
-  stroke: rgba(200, 200, 200, 0.2);
+.poloto_grid {
+  stroke: rgba(200, 200, 200, 0.3) !important;
 }
