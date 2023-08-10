@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>7.62x54mm R FMJ - Tarkov Ballistics</title>
+
+<meta name="description" content="Full Metal Jacket bullet. Standard lead core with a metallic jacket. Best for training and target shooting applications.">
+<link rel="preload" href="/resources/fonts/Bender.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/resources/fonts/Bender-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/resources/css/main.css?v=22240d9">
+<link rel="icon" type="image/svg+xml" href="/resources/img/icon.svg" sizes="any">
+<meta name="theme-color" content="#c8c8c8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tarkov-ballistics.com">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Tarkov Ballistics">
+
+<meta property="og:title" content="7.62x54mm R FMJ">
+
+<meta property="og:description" content="Full Metal Jacket bullet. Standard lead core with a metallic jacket. Best for training and target shooting applications.">
+<meta property="og:image" content="https://tarkov-ballistics.com/resources/img/logo.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="800">
+  </head>
+  <body>
+    <header>
+      <div class="title">
+    <a href="/">
+        <div class="logo">&nbsp;</div>
+        <h1>Tarkov Ballistics</h1>
+    </a>
+</div>
+
+<nav>
+    <ul class="menu">
+
+        <li>
+            <a href="/">Home</a>
+        </li>
+
+        <li>
+            <a href="/charts/ammo_chart_list.html">Ammo</a>
+        </li>
+
+        <li class="submenu">
+            <div class="name">Range Charts</div>
+            <ul>
+                <li>
+                    <a href="/charts/penetration_power_by_distance.html">Penetration Power</a>
+                </li>
+                <li>
+                    <a href="/charts/damage_by_distance.html">Damage</a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="submenu">
+            <div class="name">Armor Charts</div>
+            <ul>
+                <li>
+                    <a href="/charts/penetration_chance_by_class.html">Penetration Chance</a>
+                </li>
+                <li>
+                    <a href="/charts/armor_damage_by_class.html">Armor Damage</a>
+                </li>
+                <li>
+                    <a href="/charts/shots_to_pen_chance_by_class.html">Shots to Pen. Chance</a>
+                </li>
+                <li>
+                    <a href="/charts/shots_to_damage_by_class.html">Shots to Damage</a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="https://calculator.tarkov-ballistics.com" target="_blank">Calculator</a>
+        </li>
+
+        <li>
+            <a href="https://book.tarkov-ballistics.com" target="_blank">Handbook</a>
+        </li>
+
+    </ul>
+</nav>
+    </header>
+
+    <main>
+        
+<article>
+
+    <h1>7.62x54mm R FMJ</h1>
+
+    <div class="item-info">
+        <div class="description">Full Metal Jacket bullet. Standard lead core with a metallic jacket. Best for training and target shooting applications.</div>
+        
+        <div class="data-table">
+            <table>
+                <caption>Properties</caption>
+
+                <tbody>
+                    <tr>
+                        <th>
+                            Muzzle Velocity
+                            <a title="Help" class="help" href="https://book.tarkov-ballistics.com/glossary.html#muzzle-velocity" target="_blank">&nbsp;</a>
+                        </th>
+                        <td>760 m/s</td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Damage
+                            <a title="Help" class="help" href="https://book.tarkov-ballistics.com/glossary.html#damage" target="_blank">&nbsp;</a>
+                        </th>
+                        <td>84</td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Penetration Power
+                            <a title="Help" class="help" href="https://book.tarkov-ballistics.com/glossary.html#penetration-power" target="_blank">&nbsp;</a>
+                        </th>
+                        <td>33</td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Ballistic Coefficient
+                            <a title="Help" class="help" href="https://book.tarkov-ballistics.com/glossary.html#ballistic-coefficient" target="_blank">&nbsp;</a>
+                        </th>
+                        <td>0.334</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    
+
+    <div class="graphs">
+        <div id="trajectoryGraph" class="graph"><svg class="poloto" width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+	<style>
+ .poloto{
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  font-family:Roboto,sans-serif;
+  font-size:16px;
+}
+.poloto_background{fill:#262626;}
+.poloto_scatter{stroke-width:7}
+.poloto_line{stroke-width:2}
+.poloto_text{fill: white;}
+.poloto_name{font-size:24px;dominant-baseline:start;text-anchor:middle;}
+.poloto_where{dominant-baseline:middle;text-anchor:start}
+.poloto_text.poloto_legend{font-size:20px;dominant-baseline:middle;text-anchor:start;}
+.poloto_text.poloto_ticks.poloto_y{dominant-baseline:middle;text-anchor:end}
+.poloto_text.poloto_ticks.poloto_x{dominant-baseline:start;text-anchor:middle}
+.poloto_imgs.poloto_ticks{stroke: white;stroke-width:3;fill:none;stroke-dasharray:none}
+.poloto_grid{stroke:gray;stroke-width:0.5}
+
+.poloto0.poloto_stroke{stroke:blue;}
+.poloto1.poloto_stroke{stroke:red;}
+.poloto2.poloto_stroke{stroke:green;}
+.poloto3.poloto_stroke{stroke:gold;}
+.poloto4.poloto_stroke{stroke:aqua;}
+.poloto5.poloto_stroke{stroke:lime;}
+.poloto6.poloto_stroke{stroke:orange;}
+.poloto7.poloto_stroke{stroke:chocolate;}
+.poloto0.poloto_fill{fill:blue;}
+.poloto1.poloto_fill{fill:red;}
+.poloto2.poloto_fill{fill:green;}
+.poloto3.poloto_fill{fill:gold;}
+.poloto4.poloto_fill{fill:aqua;}
+.poloto5.poloto_fill{fill:lime;}
+.poloto6.poloto_fill{fill:orange;}
+.poloto7.poloto_fill{fill:chocolate;}
+ .poloto_background{fill:none;}
+	</style>
+	<circle r="1e5" class="poloto_background"/>
+	<g id="poloto_plot0" class="poloto_plot poloto_imgs poloto_line poloto0 poloto_stroke" fill="none" stroke="black">
+		<path d=" M 150.00 100.30 L 153.78 100.22 L 157.52 100.15 L 161.24 100.10 L 164.92 100.05 L 168.57 100.02 L 172.19 100.01 L 175.78 100.00 L 179.34 100.01 L 182.87 100.03 L 186.37 100.06 L 189.84 100.10 L 193.28 100.15 L 196.69 100.22 L 200.08 100.30 L 203.43 100.39 L 206.76 100.49 L 210.06 100.60 L 213.33 100.72 L 216.58 100.86 L 219.80 101.00 L 222.99 101.16 L 226.15 101.33 L 229.29 101.50 L 232.41 101.69 L 235.49 101.89 L 238.55 102.10 L 241.59 102.32 L 244.60 102.55 L 247.58 102.79 L 250.54 103.04 L 253.47 103.30 L 256.38 103.57 L 259.26 103.85 L 262.12 104.14 L 264.95 104.44 L 267.76 104.74 L 270.54 105.06 L 273.29 105.39 L 276.02 105.73 L 278.73 106.07 L 281.41 106.42 L 284.07 106.79 L 286.70 107.16 L 289.31 107.54 L 291.89 107.93 L 294.45 108.33 L 296.99 108.73 L 299.50 109.15 L 301.99 109.57 L 304.46 110.00 L 306.90 110.44 L 309.33 110.89 L 311.73 111.34 L 314.11 111.81 L 316.47 112.28 L 318.81 112.76 L 321.13 113.24 L 323.42 113.74 L 325.70 114.24 L 327.96 114.75 L 330.20 115.27 L 332.43 115.80 L 334.63 116.34 L 336.82 116.88 L 338.99 117.43 L 341.14 117.99 L 343.28 118.55 L 345.41 119.13 L 347.51 119.71 L 349.61 120.30 L 351.69 120.90 L 353.75 121.51 L 355.81 122.12 L 357.85 122.75 L 359.87 123.38 L 361.89 124.02 L 363.89 124.67 L 365.88 125.33 L 367.86 125.99 L 369.83 126.66 L 371.79 127.35 L 373.74 128.04 L 375.68 128.74 L 377.61 129.45 L 379.53 130.16 L 381.44 130.89 L 383.34 131.62 L 385.23 132.36 L 387.11 133.12 L 388.99 133.88 L 390.86 134.65 L 392.72 135.42 L 394.57 136.21 L 396.41 137.01 L 398.25 137.81 L 400.08 138.63 L 401.90 139.45 L 403.72 140.28 L 405.53 141.12 L 407.33 141.97 L 409.13 142.83 L 410.92 143.70 L 412.70 144.57 L 414.48 145.46 L 416.25 146.36 L 418.01 147.26 L 419.77 148.17 L 421.53 149.10 L 423.27 150.03 L 425.02 150.97 L 426.75 151.92 L 428.49 152.88 L 430.21 153.85 L 431.93 154.83 L 433.65 155.81 L 435.36 156.81 L 437.07 157.81 L 438.77 158.83 L 440.47 159.85 L 442.16 160.89 L 443.84 161.93 L 445.53 162.98 L 447.21 164.04 L 448.88 165.11 L 450.55 166.19 L 452.21 167.28 L 453.88 168.38 L 455.53 169.49 L 457.18 170.60 L 458.83 171.73 L 460.48 172.87 L 462.12 174.01 L 463.75 175.16 L 465.38 176.33 L 467.01 177.50 L 468.64 178.68 L 470.26 179.87 L 471.87 181.08 L 473.49 182.29 L 475.10 183.51 L 476.70 184.73 L 478.31 185.97 L 479.90 187.22 L 481.50 188.48 L 483.09 189.75 L 484.68 191.02 L 486.27 192.31 L 487.85 193.60 L 489.43 194.91 L 491.00 196.22 L 492.57 197.54 L 494.14 198.87 L 495.71 200.22 L 497.27 201.57 L 498.83 202.93 L 500.38 204.30 L 501.93 205.68 L 503.48 207.06 L 505.03 208.46 L 506.57 209.87 L 508.11 211.28 L 509.65 212.71 L 511.18 214.15 L 512.71 215.59 L 514.24 217.04 L 515.77 218.51 L 517.29 219.98 L 518.81 221.46 L 520.33 222.95 L 521.84 224.45 L 523.35 225.97 L 524.86 227.48 L 526.37 229.01 L 527.87 230.55 L 529.37 232.10 L 530.87 233.66 L 532.37 235.22 L 533.86 236.80 L 535.35 238.39 L 536.84 239.98 L 538.32 241.58 L 539.80 243.20 L 541.28 244.82 L 542.76 246.45 L 544.24 248.09 L 545.71 249.74 L 547.18 251.40 L 548.65 253.07 L 550.11 254.75 L 551.57 256.44 L 553.03 258.14 L 554.49 259.84 L 555.95 261.56 L 557.40 263.28 L 558.85 265.02 L 560.30 266.76 L 561.74 268.51 L 563.19 270.28 L 564.63 272.05 L 566.07 273.83 L 567.50 275.62 L 568.94 277.42 L 570.37 279.23 L 571.80 281.05 L 573.23 282.88 L 574.65 284.71 L 576.08 286.56 L 577.50 288.42 L 578.92 290.28 L 580.34 292.16 L 581.75 294.04 L 583.16 295.93 L 584.57 297.83 L 585.98 299.75 L 587.39 301.67 L 588.79 303.60 L 590.20 305.54 L 591.60 307.49 L 593.00 309.44 L 594.39 311.41 L 595.79 313.39 L 597.18 315.37 L 598.57 317.37 L 599.96 319.37 L 601.34 321.38 L 602.73 323.41 L 604.11 325.44 L 605.49 327.48 L 606.87 329.53 L 608.24 331.59 L 609.62 333.66 L 610.99 335.74 L 612.36 337.82 L 613.73 339.92 L 615.10 342.03 L 616.46 344.14 L 617.83 346.26 L 619.19 348.40 L 620.55 350.54 L 621.90 352.69 L 623.26 354.85 L 624.61 357.02 L 625.96 359.20 L 627.31 361.39 L 628.66 363.59 L 630.01 365.79 L 631.35 368.01 L 632.70 370.24 L 634.04 372.47 L 635.38 374.71 L 636.72 376.97 L 638.05 379.23 L 639.39 381.50 L 640.72 383.78 L 642.05 386.07 L 643.38 388.37 L 644.71 390.68 L 646.03 392.99 L 647.36 395.32 L 648.68 397.66 L 650.00 400.00"/>
+	</g>
+	<text class="poloto_text poloto_name poloto_title" x="400.00" y="37.50">Trajectory</text>
+	<text class="poloto_text poloto_name poloto_x" x="400.00" y="481.25">Range (m)</text>
+	<text class="poloto_text poloto_name poloto_y" x="37.50" y="250.00" transform="rotate(-90,37.50,250.00)">Drop (m)</text>
+	<text class="poloto_text poloto_ticks poloto_y">
+		<tspan x="135.00" y="347.29">-20</tspan>
+		<tspan x="135.00" y="285.55">-15</tspan>
+		<tspan x="135.00" y="223.80">-10</tspan>
+		<tspan x="135.00" y="162.05">-5</tspan>
+		<tspan x="135.00" y="100.30">0</tspan>
+	</text>
+	<g class="poloto_imgs poloto_ticks poloto_y">
+		<line x1="150.00" x2="144.00" y1="347.29" y2="347.29"/>
+		<line x1="150.00" x2="144.00" y1="285.55" y2="285.55"/>
+		<line x1="150.00" x2="144.00" y1="223.80" y2="223.80"/>
+		<line x1="150.00" x2="144.00" y1="162.05" y2="162.05"/>
+		<line x1="150.00" x2="144.00" y1="100.30" y2="100.30"/>
+	</g>
+	<g class="poloto_grid poloto_y">
+		<line x1="150.00" x2="650.00" y1="347.29" y2="347.29"/>
+		<line x1="150.00" x2="650.00" y1="285.55" y2="285.55"/>
+		<line x1="150.00" x2="650.00" y1="223.80" y2="223.80"/>
+		<line x1="150.00" x2="650.00" y1="162.05" y2="162.05"/>
+		<line x1="150.00" x2="650.00" y1="100.30" y2="100.30"/>
+	</g>
+	<text class="poloto_text poloto_ticks poloto_x">
+		<tspan x="150.00" y="430.00">0</tspan>
+		<tspan x="249.86" y="430.00">200</tspan>
+		<tspan x="349.73" y="430.00">400</tspan>
+		<tspan x="449.59" y="430.00">600</tspan>
+		<tspan x="549.46" y="430.00">800</tspan>
+		<tspan x="649.32" y="430.00">1000</tspan>
+	</text>
+	<g class="poloto_imgs poloto_ticks poloto_x">
+		<line x1="150.00" x2="150.00" y1="400.00" y2="405.00"/>
+		<line x1="249.86" x2="249.86" y1="400.00" y2="405.00"/>
+		<line x1="349.73" x2="349.73" y1="400.00" y2="405.00"/>
+		<line x1="449.59" x2="449.59" y1="400.00" y2="405.00"/>
+		<line x1="549.46" x2="549.46" y1="400.00" y2="405.00"/>
+		<line x1="649.32" x2="649.32" y1="400.00" y2="405.00"/>
+	</g>
+	<g class="poloto_grid poloto_x">
+		<line x1="150.00" x2="150.00" y1="400.00" y2="100.00"/>
+		<line x1="249.86" x2="249.86" y1="400.00" y2="100.00"/>
+		<line x1="349.73" x2="349.73" y1="400.00" y2="100.00"/>
+		<line x1="449.59" x2="449.59" y1="400.00" y2="100.00"/>
+		<line x1="549.46" x2="549.46" y1="400.00" y2="100.00"/>
+		<line x1="649.32" x2="649.32" y1="400.00" y2="100.00"/>
+	</g>
+	<path class="poloto_imgs poloto_ticks poloto_x" style="stroke-dasharray:12.482969334340488;stroke-dashoffset:-0;" d=" M 150.00 400.00 L 650.00 400.00"/>
+	<path class="poloto_imgs poloto_ticks poloto_y" style="stroke-dasharray:6.174916218411898;stroke-dashoffset:-52.70530693126565;" d=" M 150.00 400.00 L 150.00 100.00"/>
+</svg>
+</div>
+        <div id="energyGraph" class="graph"><svg class="poloto" width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+	<style>
+ .poloto{
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  font-family:Roboto,sans-serif;
+  font-size:16px;
+}
+.poloto_background{fill:#262626;}
+.poloto_scatter{stroke-width:7}
+.poloto_line{stroke-width:2}
+.poloto_text{fill: white;}
+.poloto_name{font-size:24px;dominant-baseline:start;text-anchor:middle;}
+.poloto_where{dominant-baseline:middle;text-anchor:start}
+.poloto_text.poloto_legend{font-size:20px;dominant-baseline:middle;text-anchor:start;}
+.poloto_text.poloto_ticks.poloto_y{dominant-baseline:middle;text-anchor:end}
+.poloto_text.poloto_ticks.poloto_x{dominant-baseline:start;text-anchor:middle}
+.poloto_imgs.poloto_ticks{stroke: white;stroke-width:3;fill:none;stroke-dasharray:none}
+.poloto_grid{stroke:gray;stroke-width:0.5}
+
+.poloto0.poloto_stroke{stroke:blue;}
+.poloto1.poloto_stroke{stroke:red;}
+.poloto2.poloto_stroke{stroke:green;}
+.poloto3.poloto_stroke{stroke:gold;}
+.poloto4.poloto_stroke{stroke:aqua;}
+.poloto5.poloto_stroke{stroke:lime;}
+.poloto6.poloto_stroke{stroke:orange;}
+.poloto7.poloto_stroke{stroke:chocolate;}
+.poloto0.poloto_fill{fill:blue;}
+.poloto1.poloto_fill{fill:red;}
+.poloto2.poloto_fill{fill:green;}
+.poloto3.poloto_fill{fill:gold;}
+.poloto4.poloto_fill{fill:aqua;}
+.poloto5.poloto_fill{fill:lime;}
+.poloto6.poloto_fill{fill:orange;}
+.poloto7.poloto_fill{fill:chocolate;}
+ .poloto_background{fill:none;}
+	</style>
+	<circle r="1e5" class="poloto_background"/>
+	<g id="poloto_plot0" class="poloto_plot poloto_imgs poloto_line poloto0 poloto_stroke" fill="none" stroke="black">
+		<path d=" M 150.00 100.00 L 153.78 101.29 L 157.52 102.57 L 161.24 103.83 L 164.92 105.07 L 168.57 106.30 L 172.19 107.52 L 175.78 108.72 L 179.34 109.91 L 182.87 111.09 L 186.37 112.25 L 189.84 113.41 L 193.28 114.55 L 196.69 115.68 L 200.08 116.80 L 203.43 117.91 L 206.76 119.01 L 210.06 120.10 L 213.33 121.18 L 216.58 122.24 L 219.80 123.31 L 222.99 124.37 L 226.15 125.40 L 229.29 126.46 L 232.41 127.49 L 235.49 128.51 L 238.55 129.54 L 241.59 130.56 L 244.60 131.56 L 247.58 132.59 L 250.54 133.60 L 253.47 134.59 L 256.38 135.56 L 259.26 136.57 L 262.12 137.56 L 264.95 138.53 L 267.76 139.57 L 270.54 140.58 L 273.29 141.56 L 276.02 142.52 L 278.73 143.53 L 281.41 144.51 L 284.07 145.47 L 286.70 146.46 L 289.31 147.42 L 291.89 148.35 L 294.45 149.25 L 296.99 150.19 L 299.50 151.10 L 301.99 151.98 L 304.46 152.90 L 306.90 153.79 L 309.33 154.65 L 311.73 155.48 L 314.11 156.34 L 316.47 157.17 L 318.81 157.97 L 321.13 158.75 L 323.42 159.55 L 325.70 160.32 L 327.96 161.06 L 330.20 161.78 L 332.43 162.48 L 334.63 163.18 L 336.82 163.85 L 338.99 164.51 L 341.14 165.15 L 343.28 165.76 L 345.41 166.37 L 347.51 166.95 L 349.61 167.52 L 351.69 168.07 L 353.75 168.61 L 355.81 169.13 L 357.85 169.63 L 359.87 170.12 L 361.89 170.59 L 363.89 171.05 L 365.88 171.50 L 367.86 171.94 L 369.83 172.37 L 371.79 172.77 L 373.74 173.17 L 375.68 173.55 L 377.61 173.93 L 379.53 174.30 L 381.44 174.66 L 383.34 175.01 L 385.23 175.36 L 387.11 175.70 L 388.99 176.01 L 390.86 176.32 L 392.72 176.63 L 394.57 176.92 L 396.41 177.22 L 398.25 177.51 L 400.08 177.79 L 401.90 178.07 L 403.72 178.35 L 405.53 178.62 L 407.33 178.88 L 409.13 179.14 L 410.92 179.38 L 412.70 179.62 L 414.48 179.86 L 416.25 180.09 L 418.01 180.32 L 419.77 180.55 L 421.53 180.77 L 423.27 180.99 L 425.02 181.21 L 426.75 181.42 L 428.49 181.63 L 430.21 181.84 L 431.93 182.05 L 433.65 182.25 L 435.36 182.45 L 437.07 182.64 L 438.77 182.83 L 440.47 183.01 L 442.16 183.19 L 443.84 183.37 L 445.53 183.55 L 447.21 183.72 L 448.88 183.90 L 450.55 184.07 L 452.21 184.24 L 453.88 184.41 L 455.53 184.58 L 457.18 184.74 L 458.83 184.90 L 460.48 185.07 L 462.12 185.23 L 463.75 185.39 L 465.38 185.54 L 467.01 185.70 L 468.64 185.85 L 470.26 185.99 L 471.87 186.14 L 473.49 186.28 L 475.10 186.42 L 476.70 186.56 L 478.31 186.70 L 479.90 186.84 L 481.50 186.98 L 483.09 187.11 L 484.68 187.25 L 486.27 187.38 L 487.85 187.51 L 489.43 187.64 L 491.00 187.78 L 492.57 187.91 L 494.14 188.03 L 495.71 188.16 L 497.27 188.29 L 498.83 188.41 L 500.38 188.54 L 501.93 188.66 L 503.48 188.78 L 505.03 188.91 L 506.57 189.03 L 508.11 189.15 L 509.65 189.26 L 511.18 189.37 L 512.71 189.49 L 514.24 189.60 L 515.77 189.71 L 517.29 189.82 L 518.81 189.93 L 520.33 190.04 L 521.84 190.15 L 523.35 190.26 L 524.86 190.36 L 526.37 190.47 L 527.87 190.58 L 529.37 190.68 L 530.87 190.79 L 532.37 190.89 L 533.86 190.99 L 535.35 191.09 L 536.84 191.20 L 538.32 191.30 L 539.80 191.40 L 541.28 191.50 L 542.76 191.60 L 544.24 191.70 L 545.71 191.79 L 547.18 191.89 L 548.65 191.99 L 550.11 192.08 L 551.57 192.18 L 553.03 192.27 L 554.49 192.37 L 555.95 192.46 L 557.40 192.55 L 558.85 192.64 L 560.30 192.73 L 561.74 192.82 L 563.19 192.91 L 564.63 193.00 L 566.07 193.09 L 567.50 193.18 L 568.94 193.26 L 570.37 193.35 L 571.80 193.44 L 573.23 193.52 L 574.65 193.61 L 576.08 193.69 L 577.50 193.78 L 578.92 193.86 L 580.34 193.95 L 581.75 194.03 L 583.16 194.11 L 584.57 194.19 L 585.98 194.28 L 587.39 194.36 L 588.79 194.44 L 590.20 194.52 L 591.60 194.60 L 593.00 194.68 L 594.39 194.76 L 595.79 194.84 L 597.18 194.92 L 598.57 195.00 L 599.96 195.07 L 601.34 195.15 L 602.73 195.23 L 604.11 195.31 L 605.49 195.38 L 606.87 195.46 L 608.24 195.53 L 609.62 195.61 L 610.99 195.68 L 612.36 195.76 L 613.73 195.83 L 615.10 195.91 L 616.46 195.98 L 617.83 196.05 L 619.19 196.12 L 620.55 196.20 L 621.90 196.27 L 623.26 196.34 L 624.61 196.41 L 625.96 196.48 L 627.31 196.55 L 628.66 196.62 L 630.01 196.69 L 631.35 196.76 L 632.70 196.83 L 634.04 196.89 L 635.38 196.96 L 636.72 197.03 L 638.05 197.10 L 639.39 197.17 L 640.72 197.23 L 642.05 197.30 L 643.38 197.37 L 644.71 197.43 L 646.03 197.50 L 647.36 197.56 L 648.68 197.63 L 650.00 197.70"/>
+	</g>
+	<text class="poloto_text poloto_name poloto_title" x="400.00" y="37.50">Energy</text>
+	<text class="poloto_text poloto_name poloto_x" x="400.00" y="481.25">Range (m)</text>
+	<text class="poloto_text poloto_name poloto_y" x="37.50" y="250.00" transform="rotate(-90,37.50,250.00)">Vf</text>
+	<text class="poloto_text poloto_ticks poloto_y">
+		<tspan x="135.00" y="400.00">0.0</tspan>
+		<tspan x="135.00" y="340.00">0.2</tspan>
+		<tspan x="135.00" y="280.00">0.4</tspan>
+		<tspan x="135.00" y="220.00">0.6</tspan>
+		<tspan x="135.00" y="160.00">0.8</tspan>
+		<tspan x="135.00" y="100.00">1.0</tspan>
+	</text>
+	<g class="poloto_imgs poloto_ticks poloto_y">
+		<line x1="150.00" x2="144.00" y1="400.00" y2="400.00"/>
+		<line x1="150.00" x2="144.00" y1="340.00" y2="340.00"/>
+		<line x1="150.00" x2="144.00" y1="280.00" y2="280.00"/>
+		<line x1="150.00" x2="144.00" y1="220.00" y2="220.00"/>
+		<line x1="150.00" x2="144.00" y1="160.00" y2="160.00"/>
+		<line x1="150.00" x2="144.00" y1="100.00" y2="100.00"/>
+	</g>
+	<g class="poloto_grid poloto_y">
+		<line x1="150.00" x2="650.00" y1="400.00" y2="400.00"/>
+		<line x1="150.00" x2="650.00" y1="340.00" y2="340.00"/>
+		<line x1="150.00" x2="650.00" y1="280.00" y2="280.00"/>
+		<line x1="150.00" x2="650.00" y1="220.00" y2="220.00"/>
+		<line x1="150.00" x2="650.00" y1="160.00" y2="160.00"/>
+		<line x1="150.00" x2="650.00" y1="100.00" y2="100.00"/>
+	</g>
+	<text class="poloto_text poloto_ticks poloto_x">
+		<tspan x="150.00" y="430.00">0</tspan>
+		<tspan x="249.86" y="430.00">200</tspan>
+		<tspan x="349.73" y="430.00">400</tspan>
+		<tspan x="449.59" y="430.00">600</tspan>
+		<tspan x="549.46" y="430.00">800</tspan>
+		<tspan x="649.32" y="430.00">1000</tspan>
+	</text>
+	<g class="poloto_imgs poloto_ticks poloto_x">
+		<line x1="150.00" x2="150.00" y1="400.00" y2="405.00"/>
+		<line x1="249.86" x2="249.86" y1="400.00" y2="405.00"/>
+		<line x1="349.73" x2="349.73" y1="400.00" y2="405.00"/>
+		<line x1="449.59" x2="449.59" y1="400.00" y2="405.00"/>
+		<line x1="549.46" x2="549.46" y1="400.00" y2="405.00"/>
+		<line x1="649.32" x2="649.32" y1="400.00" y2="405.00"/>
+	</g>
+	<g class="poloto_grid poloto_x">
+		<line x1="150.00" x2="150.00" y1="400.00" y2="100.00"/>
+		<line x1="249.86" x2="249.86" y1="400.00" y2="100.00"/>
+		<line x1="349.73" x2="349.73" y1="400.00" y2="100.00"/>
+		<line x1="449.59" x2="449.59" y1="400.00" y2="100.00"/>
+		<line x1="549.46" x2="549.46" y1="400.00" y2="100.00"/>
+		<line x1="649.32" x2="649.32" y1="400.00" y2="100.00"/>
+	</g>
+	<path class="poloto_imgs poloto_ticks poloto_x" style="stroke-dasharray:12.482969334340488;stroke-dashoffset:-0;" d=" M 150.00 400.00 L 650.00 400.00"/>
+	<path class="poloto_imgs poloto_ticks poloto_y" style="stroke-dasharray:7.5;stroke-dashoffset:-0;" d=" M 150.00 400.00 L 150.00 100.00"/>
+</svg>
+</div>
+    </div>
+
+    <div class="table-wrapper">
+        <table class="table-big">
+
+            <caption>Range Card</caption>
+
+            <colgroup>
+                <col>
+                <col span="5">
+            </colgroup>
+
+            <thead>
+                <tr>
+                    <th id="range">Range</th>
+                    <th id="velocity">Velocity</th>
+                    <th id="damage">Damage</th>
+                    <th id="penetrationPower">Penetration Power</th>
+                    <th id="drop">Drop</th>
+                    <th id="timeOfFlight">Time Of Flight</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                
+                <tr>
+                    <th id="100m">100 m</th>
+                    <td headers="velocity 100m">674.86 m/s</td>
+                    <td headers="damage 100m">79.3</td>
+                    <td headers="penetrationPower 100m">31.16</td>
+                    <td headers="drop 100m">-0.0 cm</td>
+                    <td headers="timeOfFlight 100m">0.14 s</td>
+                </tr>
+                
+                <tr>
+                    <th id="200m">200 m</th>
+                    <td headers="velocity 200m">589.77 m/s</td>
+                    <td headers="damage 200m">74.6</td>
+                    <td headers="penetrationPower 200m">29.31</td>
+                    <td headers="drop 200m">-22.18 cm</td>
+                    <td headers="timeOfFlight 200m">0.31 s</td>
+                </tr>
+                
+                <tr>
+                    <th id="300m">300 m</th>
+                    <td headers="velocity 300m">496.65 m/s</td>
+                    <td headers="damage 300m">69.45</td>
+                    <td headers="penetrationPower 300m">27.29</td>
+                    <td headers="drop 300m">-75.07 cm</td>
+                    <td headers="timeOfFlight 300m">0.5 s</td>
+                </tr>
+                
+                <tr>
+                    <th id="400m">400 m</th>
+                    <td headers="velocity 400m">415.1 m/s</td>
+                    <td headers="damage 400m">64.94</td>
+                    <td headers="penetrationPower 400m">25.52</td>
+                    <td headers="drop 400m">-166.83 cm</td>
+                    <td headers="timeOfFlight 400m">0.72 s</td>
+                </tr>
+                
+                <tr>
+                    <th id="500m">500 m</th>
+                    <td headers="velocity 500m">365.86 m/s</td>
+                    <td headers="damage 500m">62.22</td>
+                    <td headers="penetrationPower 500m">24.45</td>
+                    <td headers="drop 500m">-310.35 cm</td>
+                    <td headers="timeOfFlight 500m">0.97 s</td>
+                </tr>
+                
+                <tr>
+                    <th id="600m">600 m</th>
+                    <td headers="velocity 600m">334.05 m/s</td>
+                    <td headers="damage 600m">60.47</td>
+                    <td headers="penetrationPower 600m">23.76</td>
+                    <td headers="drop 600m">-533.55 cm</td>
+                    <td headers="timeOfFlight 600m">1.26 s</td>
+                </tr>
+                
+                <tr>
+                    <th id="700m">700 m</th>
+                    <td headers="velocity 700m">311.41 m/s</td>
+                    <td headers="damage 700m">59.21</td>
+                    <td headers="penetrationPower 700m">23.27</td>
+                    <td headers="drop 700m">-842.1 cm</td>
+                    <td headers="timeOfFlight 700m">1.57 s</td>
+                </tr>
+                
+                <tr>
+                    <th id="800m">800 m</th>
+                    <td headers="velocity 800m">293.45 m/s</td>
+                    <td headers="damage 800m">58.22</td>
+                    <td headers="penetrationPower 800m">22.88</td>
+                    <td headers="drop 800m">-1,250.64 cm</td>
+                    <td headers="timeOfFlight 800m">1.9 s</td>
+                </tr>
+                
+                <tr>
+                    <th id="900m">900 m</th>
+                    <td headers="velocity 900m">278.3 m/s</td>
+                    <td headers="damage 900m">57.38</td>
+                    <td headers="penetrationPower 900m">22.55</td>
+                    <td headers="drop 900m">-1,773.89 cm</td>
+                    <td headers="timeOfFlight 900m">2.24 s</td>
+                </tr>
+                
+                <tr>
+                    <th id="1000m">1000 m</th>
+                    <td headers="velocity 1000m">265.01 m/s</td>
+                    <td headers="damage 1000m">56.65</td>
+                    <td headers="penetrationPower 1000m">22.26</td>
+                    <td headers="drop 1000m">-2,426.76 cm</td>
+                    <td headers="timeOfFlight 1000m">2.61 s</td>
+                </tr>
+                
+            </tbody>
+
+        </table>
+    </div>
+
+    <footer>
+        <p>Zeroed to 100m</p>
+    </footer>
+</article>
+
+    </main>
+
+    <footer>
+      <div class="generated">
+    Built on <time datetime="2023-08-10T17:03:52.071+02:00">10 Aug 2023 17:03 +02:00</time>
+</div>
+
+<div class="copy">
+    &copy; 2023 Tarkov Ballistics
+</div>
+
+<div class="social">
+    <ul>
+        <li>
+            <a title="Discord" href="https://discord.gg/EYgs6Bgs64" target="_blank" rel="noopener">
+                <img src="/resources/img/discord.svg" alt="Discord logo">
+            </a>
+        </li>
+        <li>
+            <a title="GitHub" href="https://github.com/tarkov-ballistics" target="_blank" rel="noopener">
+                <img src="/resources/img/github.svg" alt="GitHub logo">
+            </a>
+        </li>
+        <li>
+            <a title="Donate" href="https://www.paypal.com/donate/?hosted_button_id=SA27PQV37KF44" target="_blank" rel="noopener">
+                <img src="/resources/img/support.svg" alt="Heart icon">
+            </a>
+        </li>
+    </ul>
+</div>
+    </footer>
+  </body>
+</html>
